@@ -1,0 +1,19 @@
+#create and delete a directory at everyday 0:00
+0 0 * * * python /home/pi/Security_Camera/mk-dlt-dir.py
+
+#open image identification at everyday 1:00-7:00
+0 1 * * * sudo python /home/pi/Security_Camera/simpleCV.py
+
+#reboot
+0 7 * * * reboot
+
+#sent a email attached everyday catched picture
+30 7 * * * python /home/pi/Security_Camera/mailer.py
+
+#streaming
+0 8 * * * sudo python /home/pi/Security_Camera/streaming.py
+
+#reboot
+0 17 * * * reboot
+ 
+
