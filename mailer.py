@@ -16,9 +16,9 @@ from email.MIMEMultipart import MIMEMultipart
 date =  time.strftime("%Y-%m-%d")
 
 #set email From_addr and To_addr
-From   = "1227398402@qq.com"
-Passwd = "wqqitjcleljfhajj"
-To     = "1227398402@qq.com"
+From   = ""
+Passwd = ""
+To     = ""
 
 #email part
 msg = MIMEMultipart()
